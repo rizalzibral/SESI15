@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+</head>
+<body>
+
+    <div>
+        <div>
+            celcius
+                <input type="number" id="c">
+        </div>
+        <div>
+            fahrenheit
+                <input type="number" id="f">
+        </div>
+        <div>
+            kelvin
+                <input type="number" id="k">
+        </div>
+        
+    </div>
+
+    <script src="jquery-3.7.0.min.js"></script>
+    <script>
+    $(function(){
+        $("#c").on("input",function()
+        {
+            console.log("nilai dari c: "+$("#c").val());
+        })
+        $("#f").on("input",function(){
+            console.log("nilai dari f: "+$("#f").val());
+        });
+        $("#k").on("input",function(){
+            console.log("nilai dari k: "+$("#k").val());
+        });
+    })
+    </script>
+    
+</body>
+</html>
